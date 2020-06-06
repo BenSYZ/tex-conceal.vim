@@ -75,6 +75,9 @@ syn match texMathSymbol '\\varphi\>' contained conceal cchar=φ
 syn match texMathSymbol '\\hbar\>' contained conceal cchar=ℏ
 syn match texMathSymbol '\\otimes\>' contained conceal cchar=⊗
 syn match texMathSymbol '\\nabla\>' contained conceal cchar=∇
+syn match texMathSymbol '\\partial\>' contained conceal cchar=∂
+syn match texMathSymbol '\\Box\>' contained conceal cchar=□
+syn match texMathSymbol '\\dag\>' contained conceal cchar=†
 
 " logical symbols
 syn match texMathSymbol '\\lor\>' contained conceal cchar=∨
@@ -83,20 +86,22 @@ syn match texMathSymbol '\\lnot\>' contained conceal cchar=¬
 syn match texMathSymbol '\\implies\>' contained conceal cchar=⇒
 syn match texMathSymbol '\\geqslant\>' contained conceal cchar=⩾
 syn match texMathSymbol '\\leqslant\>' contained conceal cchar=⩽
-syn match texMathSymbol '\\ge \>' contained conceal cchar=≥
-syn match texMathSymbol '\\le \>' contained conceal cchar=≤
-syn match texMathSymbol '\\ll \>' contained conceal cchar=≪
-syn match texMathSymbol '\\gg \>' contained conceal cchar=≫
-syn match texMathSymbol '\\approx \>' contained conceal cchar=≈
-syn match texMathSymbol '\\equiv \>' contained conceal cchar=≡
-syn match texMathSymbol '\\propto \>' contained conceal cchar=∝
+syn match texMathSymbol '\\ge\>' contained conceal cchar=≥
+syn match texMathSymbol '\\le\>' contained conceal cchar=≤
+syn match texMathSymbol '\\ll\>' contained conceal cchar=≪
+syn match texMathSymbol '\\gg\>' contained conceal cchar=≫
+syn match texMathSymbol '\\approx\>' contained conceal cchar=≈
+syn match texMathSymbol '\\equiv\>' contained conceal cchar=≡
+syn match texMathSymbol '\\propto\>' contained conceal cchar=∝
 syn match texMathSymbol '\\perp\>' contained conceal cchar=⊥
 syn match texMathSymbol '\\cdot\>' contained conceal cchar=⋅
 syn match texMathSymbol '\\times\>' contained conceal cchar=×
-syn match texMathSymbol '\\mp \>' contained conceal cchar=∓
-syn match texMathSymbol '\\pm \>' contained conceal cchar=±
+syn match texMathSymbol '\\mp\>' contained conceal cchar=∓
+syn match texMathSymbol '\\pm\>' contained conceal cchar=±
+syn match texMathSymbol '\\bigcap\>' contained conceal cchar=⋂
+syn match texMathSymbol '\\varnothing\>' contained conceal cchar=∅
 
-syn match texMathSymbol '\\to \>' contained conceal cchar=→
+syn match texMathSymbol '\\to\>' contained conceal cchar=→
 syn match texMathSymbol '\\sum\>' contained conceal cchar=∑
 syn match texMathSymbol '\\int\>' contained conceal cchar=∫
 syn match texMathSymbol '\\infty\>' contained conceal cchar=∞
@@ -328,6 +333,8 @@ syn match texMathSymbol '\^\%(\\iota\|{\s*\\iota\s*}\)' contained conceal cchar=
 syn match texMathSymbol '\^\%(\\Phi\|{\s*\\Phi\s*}\)' contained conceal cchar=ᶲ
 syn match texMathSymbol '\^\%(\\varphi\|{\s*\\varphi\s*}\)' contained conceal cchar=ᵠ
 syn match texMathSymbol '\^\%(\\chi\|{\s*\\chi\s*}\)' contained conceal cchar=ᵡ
+syn match texMathSymbol '\^\%(\\circ\|{\s*\\circ\s*}\)' contained conceal cchar=°
+
 
 syn match texMathSymbol '\^\%(\*\|\\ast\|\\star\|{\s*\\\%(ast\|star\)\s*}\)' contained conceal cchar=˟
 syn match texMathSymbol '\^{\s*-1\s*}' contained conceal contains=texSuperscripts
