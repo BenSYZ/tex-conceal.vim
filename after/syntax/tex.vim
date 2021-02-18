@@ -78,6 +78,7 @@ syn match texMathSymbol '\\nabla\>' contained conceal cchar=∇
 syn match texMathSymbol '\\partial\>' contained conceal cchar=∂
 syn match texMathSymbol '\\Box\>' contained conceal cchar=□
 syn match texMathSymbol '\\dag\>' contained conceal cchar=†
+syn match texMathSymbol '\\forall\>' contained conceal cchar=∀
 
 " logical symbols
 syn match texMathSymbol '\\lor\>' contained conceal cchar=∨
